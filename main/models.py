@@ -5,7 +5,7 @@ from django.contrib.auth.models import AbstractUser
 from django.conf import settings
 from core.utils import sign
 
-class LillyUser(AbstractUser):
+class MintUser(AbstractUser):
     public_key = models.TextField(unique=True)
     private_key = models.TextField(unique=True)
     amount = models.IntegerField(default=0)
@@ -35,8 +35,8 @@ class LillyUser(AbstractUser):
 
     
 class Transaction(models.Model):
-    sender = models.ForeignKey(LillyUser, on_delete=models.CASCADE, related_name="sender")
-    reciever =  models.ForeignKey(LillyUser, on_delete=models.CASCADE, related_name="reciever")
+    sender = models.ForeignKey(MintUser, on_delete=models.CASCADE, related_name="sender")
+    reciever =  models.ForeignKey(MintUser, on_delete=models.CASCADE, related_name="reciever")
     amount = models.IntegerField()
     timestamp = models.DateTimeField(auto_now_add=True)
     signature = models.TextField()
@@ -95,7 +95,7 @@ class Block(models.Model):
     # serial number of block chain
     index = models.IntegerField()
     # User who mined
-    miner = models.ForeignKey(LillyUser, on_delete=models.CASCADE)
+    miner = models.ForeignKey(MintUser, on_delete=models.CASCADE)
     # Hash of previous block
     prev_hash = models.CharField(max_length = 64, verbose_name='Previous Hash')
     # Hash of the block
