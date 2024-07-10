@@ -3,18 +3,6 @@ import os
 from pathlib import Path
 
 
-import firebase_admin
-from firebase_admin import credentials
-
-
-
-
-# Download the service account key from Firebase Console and place it in your project
-cred = credentials.Certificate('firebase.json')
-firebase_admin.initialize_app(cred, options = {
-    "databaseURL":"https://mint-coins-default-rtdb.firebaseio.com"
-})
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = "lr9b%=-zx)mn!)fw%n847+^tp@4k-2lh+py+66cn$7kzi9s!zi"

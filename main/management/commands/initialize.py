@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand, CommandError
 from django.dispatch import receiver
 from main.mine_genesis import BlockCreator
-from main.models import Block, LillyUser, Transaction
+from main.models import Block, MintUser, Transaction
 from django.conf import settings
 import hashlib
 import json
@@ -18,12 +18,12 @@ class Command(BaseCommand):
         admin_username = 'admin'
         admin_password = '*'*10 
         
-        if LillyUser.objects.filter(username=admin_username).exists():
+        if MintUser.objects.filter(username=admin_username).exists():
             self.stdout.write(self.style.WARNING('Admin user already exists. Aborting command.'))
             return
         
         try:
-            admin_user = LillyUser.objects.create_user(username=admin_username, password=admin_password)
+            admin_user = MintUser.objects.create_user(username=admin_username, password=admin_password)
             admin_user.is_staff = True  
             admin_user.is_superuser = True 
             admin_user.save()

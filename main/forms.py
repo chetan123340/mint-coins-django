@@ -1,14 +1,14 @@
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
-from .models import LillyUser
+from .models import MintUser
 
-class LillyUserCreationForm(UserCreationForm):
+class MintUserCreationForm(UserCreationForm):
 
     class Meta(UserCreationForm):
-        model = LillyUser
+        model = MintUser
         fields = ('username', 'email', 'password1', 'password2')
 
-class LillyUserChangeForm(UserChangeForm):
+class MintUserChangeForm(UserChangeForm):
 
     class Meta(UserChangeForm):
-        model = LillyUser
+        model = MintUser
         fields = ('username', 'amount')

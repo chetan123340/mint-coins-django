@@ -6,13 +6,13 @@ from main.mine import MineBlock
 from django.conf import settings
 from django.shortcuts import redirect, render
 from django.urls import reverse_lazy
-from main.forms import LillyUserCreationForm
+from main.forms import MintUserCreationForm
 from django.contrib.auth import login
 from django.db.models import Sum
 from django.views.generic import TemplateView, FormView
 from django.contrib import messages
 from main.mine_genesis import BlockCreator, ValidateBlock, block_json
-from main.models import Block, Transaction, LillyUser
+from main.models import Block, Transaction, MintUser
 from django.contrib.auth.decorators import login_required
 
 class IndexView(TemplateView):
@@ -31,8 +31,8 @@ def transaction(request:HttpRequest, recv_address:str):
         reciever_address = request.POST.get("address")
         amount = int(request.POST.get("amount"))
         sender_obj = request.user
-        if LillyUser.objects.filter(address = reciever_address).exists():
-            reciever_obj = LillyUser.objects.get(address = reciever_address)
+        if MintUser.objects.filter(address = reciever_address).exists():
+            reciever_obj = MintUser.objects.get(address = reciever_address)
             if reciever_obj == sender_obj:
                 messages.error(request, "sender is same as reciever")
             elif sender_obj.amount < amount:
@@ -74,7 +74,7 @@ def add_block(request:HttpRequest):
 @login_required
 def mining(request:HttpRequest):
     if Transaction.objects.count() == 0:
-        main_user = LillyUser.objects.get(username = "admin")
+        main_user = MintUser.objects.get(username = "admin")
         Transaction.objects.create(sender = main_user, reciever= request.user, amount=0)
     context = dict()
     if request.method == "POST":
@@ -111,10 +111,10 @@ def blockview(request:HttpRequest, block_hash):
 
 class RegisterView(FormView):
     template_name = "registration/signup.html"
-    form_class = LillyUserCreationForm
+    form_class = MintUserCreationForm
     success_url = reverse_lazy("account")
 
-    def form_valid(self, form:LillyUserCreationForm):
+    def form_valid(self, form:MintUserCreationForm):
         user = form.save(commit=False)
         user.amount = 0
         user.save()
