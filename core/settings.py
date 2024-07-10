@@ -76,7 +76,7 @@ USE_TZ = True
 LOGIN_REDIRECT_URL = "account"
 LOGOUT_REDIRECT_URL = "/"
 
-AUTH_USER_MODEL = 'main.LillyUser'
+AUTH_USER_MODEL = 'main.MintUser'
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'

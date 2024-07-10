@@ -1,7 +1,6 @@
 from django.http import  HttpRequest, JsonResponse
 from django.urls import reverse
 from main.api import get_blockchain_data, serialize_blockchain
-from main.firebase import sync_blockchain_to_firebase
 from main.mine import MineBlock
 from django.conf import settings
 from django.shortcuts import redirect, render
