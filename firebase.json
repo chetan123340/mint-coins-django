@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "mint-coins",
+  "private_key_id": "3b6e5915eb6007c9c09f47909092bfede265ba17",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCxkdbIgbmGFyK+\nUWFMtK7Ld59cgSxRd1SzBRdDtlQRirClejem+710ifzKo+m60kWBFbwlp5lDI0sR\nEzuYKhpNRVybDQwsq7KZrLJ1h7K2nZL2mrQu3USBJoreTa1Gj/kU1encvfF6WFfE\nBJ9g7oYRwbIQ+ILBsODG9PpHlr+Q7Kergisjh0sO+MCUhJCYnGdSC77x2Y2T2akm\nCree3B/R9dSq0Fd8AhZrrYDjF9YxIWakdwDCtaXgbsfWQQAjl1/R4eKiVrBH7B/f\nxMSP8ikTym8GbqxU1PXeT2eYAYhOOYlX5Vz9kNdiZGbNp7qDpVUz3iDguqoTzqqP\nzgMcAdfLAgMBAAECggEAKkNyciXCMQKnr9GxzW6B3ga6ROuvzzIOVE+lYmXuq4At\nnC0zOsjXJnpDUz3hPyiWB2vTbMjvxxWK4+UGfaijuvmD2Zmo6KbzKvV6QlQKesGV\nfaGDulXK3Mx+J/wn/k/9MnLZp0MESyDkvtB02L7c5TQLfFOR16UQUvpy6YAdV1I+\nBO8bP0bJlyDDtWUdsAFPouYuXFsUFhSI67RBqC4Dt4KrwelV2ZW0TENEoVxpcgos\nI+Qvh3/1pvap4Gx2uXZc5e+9eJ7CUJyz/T+wOvLqmC/xG8dvqSLrEXedtL53tAqJ\n8RU/Qm+3EHd04/KeotQWw4IN1+oHsso7110C9t9RtQKBgQD0ShFqnjI4gBY0VgMM\npd6EY5MwuzB3bz3ozNtrMVk9+/eU66CO4aL4MVEz/n1bo+y/qtKCo5Tk1iNlNQfk\n4W/A+9cxYCCkdiIE/LKAfEGnMJkJH965plFNiDxgaQmTSubz0QDAoR3QU3DRBaby\nsq1Sysvr4UzZwFD//RFlsrjhNwKBgQC6FPvdLYUtgfzVhTgctSPThHH8jLeJvs/g\nFb7hN/CyCTl7rnYjCJWXRArd2TA1AdnRaCvAiYjFD/fA0NxtKbMfkuYQDkF0FgNf\nWYmKDgIyUjoEglnUuH/lWV69wEJ77SNVrtHlStTmR+7cXsD4Tk97pJ/cKTlJLXlW\n8fG59ijYDQKBgHCJepKCRCJxJ0l+4jK+as7UTGdjpIUw0vVfAinUdwct/zU0gyev\nXHM3zO/F6hwAXT1CxW13TE1LNM0X7AYNsHzXx5+wZ/k7jpp7iwPTui76HVXtv54I\nt2WfQCkt2kJnfBOQEeerkV96QPuZvfoKQ/xi/iQxC0U46lezToNqHO9rAoGAbnBl\nyy9pC0lKta8LTn5zdOX2gN1DUQ1ecrB1SVXaFNBEvZMdqk09+zj2+hQc+FjQ3efl\nj7AQ7GQ9tsI/EMre9K5KvNy5HBy0g7KwXq9Rvmvu4x46EnYt8gDIqfWhf8uOXRwU\nlvGCyemHamMSREy1/7wE5LXSuguzKFcQED54n0ECgYEA5vBiKbo2U8ZO1K1g6Xig\nfH/+4VXoUL5heUrLyKeNAaArrYD1Ps2Cx8YfSorP6MgK43FLunIFnbJZETsJzD5S\nw6746LSnznKHKTGUzSK1syhCWRjLqp2E1ZbW7fnCo3HIYHKoUba8f9b/SNimRBgR\nYqBJ9UgJxiSPR90XkKHHIRA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-hwupg@mint-coins.iam.gserviceaccount.com",
+  "client_id": "117877585797715055838",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-hwupg%40mint-coins.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
